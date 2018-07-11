@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">TT</string>
+
+    <string-array name="days">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+    </string-array>
+    <string-array name="slots">
+        <item>9:00</item>
+        <item>10:00</item>
+        <item>11:00</item>
+        <item>12:45</item>
+        <item>1:45</item>
+        <item>2:45</item>
+        <item>3:45</item>
+    </string-array>
 </resources>
