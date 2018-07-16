@@ -26,6 +26,9 @@ public class AddTTActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_addtt);
 
+        //I was wondering,, if u can see this line ,  then its for ur award that you are getting slim
+
+
 
         b=(Button) findViewById(R.id.button);
         day =(Spinner) findViewById(R.id.day);
