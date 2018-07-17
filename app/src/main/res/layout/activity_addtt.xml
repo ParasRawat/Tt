@@ -14,14 +14,19 @@
         android:layout_margin="8dp"
         />
 
-    <!--<Button-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--style="@style/RtlUnderlay.Widget.AppCompat.ActionButton"-->
-        <!--android:text="Get Query"-->
-        <!--android:id="@+id/query"-->
-        <!--android:layout_marginBottom="10dp"-->
-        <!--/>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/RtlUnderlay.Widget.AppCompat.ActionButton"
+        android:text="Get Query"
+        android:id="@+id/query"
+        android:layout_marginBottom="10dp"
+        />
+    </LinearLayout>
 
 
     <android.support.v4.view.ViewPager
@@ -31,7 +36,6 @@
         android:layout_below="@id/day"
         android:layout_centerHorizontal="true"
         android:layout_margin="8dp"/>
-
 
 
 
