@@ -1,5 +1,6 @@
 package com.example.gupta.tt;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,6 +9,7 @@ import android.widget.ImageView;
 
 public class Query extends AppCompatActivity {
     ImageView classimage, roomimage,timetableimage;
+    Dialog teacherdialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,13 +18,22 @@ public class Query extends AppCompatActivity {
         classimage=findViewById(R.id.classimage);
         roomimage=findViewById(R.id.roomimage);
         timetableimage=findViewById(R.id.timetableimage);
+        teacherdialog=new Dialog(this);
+
 
         classimage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Query.this,AddTTActivity.class));
+                teacherdialog.setContentView(R.layout.classquerypopup);
+                teacherdialog.show();
+
+
             }
         });
 
     }
+
+
+
+
 }
