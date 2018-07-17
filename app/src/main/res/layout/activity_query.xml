@@ -55,6 +55,7 @@
                 <ImageView
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/pic"
+                    android:id="@+id/classimage"
                     android:layout_width="wrap_content"
                     android:layout_height="60dp"
                     android:layout_margin="10dp"/>
@@ -91,6 +92,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="60dp"
                     android:layout_margin="10dp"
+                    android:id="@+id/roomimage"
                     android:src="@drawable/pic"/>
                 <TextView
                     android:layout_width="wrap_content"
@@ -125,6 +127,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="60dp"
                     android:layout_margin="10dp"
+                    android:id="@+id/teacherimage"
                     android:src="@drawable/picteacher"/>
                 <TextView
                     android:layout_width="wrap_content"
@@ -159,6 +162,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="60dp"
                     android:layout_margin="10dp"
+                    android:id="@+id/timetableimage"
                     android:src="@drawable/pictimetable"/>
                 <TextView
                     android:layout_width="wrap_content"
