@@ -24,7 +24,7 @@ public class Query extends AppCompatActivity {
         classimage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                teacherdialog.setContentView(R.layout.classquerypopup);
+                teacherdialog.setContentView(R.layout.activity_get_class);
                 teacherdialog.show();
 
 

@@ -30,18 +30,12 @@ public class AddTTActivity extends AppCompatActivity {
 
         //I was wondering,, if u can see this line ,  then its for ur award that you are getting slim
 
-        query=findViewById(R.id.query);
+
         b=(Button) findViewById(R.id.button);
         day =(Spinner) findViewById(R.id.day);
 //        slot =(Spinner) findViewById(R.id.slot);
 //        rg=(RadioGroup) findViewById(R.id.radios);
-        query.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(AddTTActivity.this,Query.class));
 
-            }
-        });
 
 
         //SPINNER
