@@ -10,7 +10,10 @@ import android.widget.TextView;
 public class QueryEditPage extends AppCompatActivity {
     String getclass,getroom,getteacher,gettimetable;
     TextView textView;
-    String True="True";
+
+    int num;
+
+
 
 
     @Override
@@ -27,13 +30,33 @@ public class QueryEditPage extends AppCompatActivity {
 
         textView.append("Get Class="+getclass+"\n"+"Get Timetable="+gettimetable+"\n"+"Get Teacher ="+getteacher+"\n"+ "Get Room="+getroom);
 
-            Log.d("IF", "onCreate: Function if statemnt");
-            check(getclass);
 
 
 
+            if (getclass != null) {
+                Log.d("whATS", "onCreate: __________-----------------------________");
+                check(getclass);
 
+            }
+
+            if (getroom != null) {
+
+
+                check3(getroom);
+
+            }
+            if (getteacher != null) {
+
+                check2(getteacher);
+
+
+        }
     }
+
+
+
+
+
     void check(String getclass){
 
         Log.d("CHECKK", "check: ENTERED THE CLASS" +getclass);
@@ -47,5 +70,34 @@ public class QueryEditPage extends AppCompatActivity {
             classfragment classfragment=new classfragment();
             fragmentTransaction.replace(R.id.first,classfragment).commit();
         }
+
+    void check2(String getteacher){
+
+        Log.d("CHECKK", "check: ENTERED THE CLASS" +getteacher);
+
+
+        Log.d("iffff", "check: ENTERRED THE FUNCTION IF CONDITION");
+
+        FragmentManager fragmentManager=getFragmentManager();
+        FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
+
+        teacherfragment teacherfragment=new teacherfragment();
+        fragmentTransaction.replace(R.id.first,teacherfragment).commit();
+    }
+
+    void check3(String getroom){
+
+        Log.d("CHECKK", "check: ENTERED THE CLASS" +getroom);
+
+
+        Log.d("iffff", "check: ENTERRED THE FUNCTION IF CONDITION");
+
+        FragmentManager fragmentManager=getFragmentManager();
+        FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
+
+        roomfragment roomfragment=new roomfragment();
+        fragmentTransaction.replace(R.id.first,roomfragment).commit();
+    }
+
 
 }
