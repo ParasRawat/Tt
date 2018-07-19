@@ -53,6 +53,11 @@
             android:layout_gravity="center_horizontal"
             >
         </Spinner>
+        <LinearLayout
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
         <Button
             android:layout_width="wrap_content"
@@ -61,6 +66,15 @@
             android:layout_gravity="center_horizontal"
             android:text="Submit"
             style="@style/RtlUnderlay.Widget.AppCompat.ActionButton"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/back"
+                style="@style/RtlUnderlay.Widget.AppCompat.ActionButton"
+                android:text="BacK"/>
+
+
+        </LinearLayout>
 
     </LinearLayout>
 </ScrollView>

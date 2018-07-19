@@ -30,30 +30,28 @@ public class QueryEditPage extends AppCompatActivity {
 
         textView.append("Get Class="+getclass+"\n"+"Get Timetable="+gettimetable+"\n"+"Get Teacher ="+getteacher+"\n"+ "Get Room="+getroom);
 
+        if (getclass != null) {
+            Log.d("whATS", "onCreate: __________-----------------------________");
+            check(getclass);
+
+        }
+
+        if (getroom != null) {
 
 
+            check3(getroom);
 
-            if (getclass != null) {
-                Log.d("whATS", "onCreate: __________-----------------------________");
-                check(getclass);
+        }
+        if (getteacher != null) {
 
-            }
-
-            if (getroom != null) {
-
-
-                check3(getroom);
-
-            }
-            if (getteacher != null) {
-
-                check2(getteacher);
+            check2(getteacher);
 
 
         }
+
+
+
     }
-
-
 
 
 
